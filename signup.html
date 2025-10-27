@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SignUp</title>
+    <style>
+        body {
+            text-align: center;
+            background-image: url("images/blur.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+        }
+     .signUp-container {
+    position: absolute;
+    background-color: #fbf5f5; /* Soft background */
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height:  450px;
+    width: 500px;
+    border: 0.09cm solid #333;
+    border-radius: 177px;
+    padding: 10px;
+}
+
+.signUp-header {
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    
+}
+.signUp-container label{
+    font-size: 18px;
+    color: #333;
+}
+.signUp-container input{
+    width: 50%;
+    padding: 10px;
+    margin: 5px 0;
+    border: px solid #171212;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+    .signUp-container button{
+        width: 20%;
+        padding: 1%;
+        background-color: rgb(250, 195, 210);
+        text-align: center;
+        color: rgb(17, 0, 0);
+        text-decoration: solid #333;
+         border: 2px solid #333; 
+         border-radius: 4px;
+          padding: 10px 20px; 
+          cursor: pointer;
+    } 
+    .form-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 0 20px;
+}
+
+.form-row label {
+    width: 40%;
+    text-align: left;
+}
+
+.form-row input {
+    width: 55%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px solid #171212;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+ 
+    </style>
+</head>
+<body>
+   <div class="signUp-container">
+    <div class="signUp-header">
+        <h1>Sign Up</h1>
+        <form>
+            <label for="Username">Username</label>
+            <input type="text" id ="username" name="Username"  placeholder="Enter your username">
+            <br><br>
+            <label for="password">password &nbsp;</label>
+            <input type="password" id="password" name="password" required>
+            </label>
+            <br><br>
+             <label for="password">CPassword</label>
+            <input type="password" id="cpassword" name="cpassword" required>
+            </label><br><br>
+            <button  type="button" onclick="signUp()"><b>SignUp</b></button>
+        </form>
+       
+
+   </div>
+</body>
+</html>
